@@ -1,0 +1,103 @@
+<nav class="navbar navbar-light bg-dark ">
+    <a class="navbar-brand  " href="#" style="color:rgb(85, 98, 237);"><b>&#169; IIH GROUP OF HOSPITALS... </b></a>
+    <span class="quote text-light"></span>
+
+    <br>
+</nav>
+
+
+
+<div class="container col-md-6 mt-0">
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">SERVICE NAME</span>
+                    </div>
+
+                    <select  #box name="sname" class="form-control" placeholder="SOURCE NAME">
+                    <option>WARMING BLANKET</option>
+                    <option>USE OF YAG LASER</option>
+
+                    <option>VIDEO TAPE</option>
+                    <option>USE OF VENTILATOR</option>
+                    <option>BP MONITORING</option>
+                    <option>BP MONITORING</option>
+                    <option>WRIST JOINT</option>
+
+                    <option>USE OF NEURO MICROSCOPE</option>
+
+                    <option>USE OF MINI SET</option>
+
+                    <option>USE OF YELLOW LASER WITH MICROPULSE</option>
+
+
+                    </select>
+
+
+
+                </div>
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">SERVICE CODE</span>
+                    </div>
+                    <input type="text" #box2 placeholder="SERVICE CODE" name="scode">
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<div>
+<div class="container col-md-4 mt-0">
+
+    <button (click)="fetchdata(box.value,box2.value)">FETCH</button>
+    <button (click)="listdata()">LIST</button> 
+    <button (click)="adddata()">ADD</button> 
+
+
+
+</div>
+</div>
+
+<div class="container col-md-4 mt-0" *ngIf="div1">
+
+
+
+
+
+    <table id="table1" class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">SERRVICE NAME</th>
+                <th scope="col">GSDM</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>{{displayVal1}}</td>
+
+                <td>{{displayVal2}}</td>
+
+
+            </tr>
+
+
+
+
+        </tbody>
+        <div>
+            <div class="container col-md-4 mt-6">
+    
+        <button (click)="vanish()">OK</button> 
+            </div>
+    </div>
+    
+    </table>
+
+</div>

@@ -1,0 +1,24 @@
+.table{
+    height: 70px;
+    margin-top: 100px;
+    margin-bottom: 1200px;
+    width: 400px;
+    /* display: none; */
+    /* background-color: rgba(0,0,0,0.7) !important; */
+    background-color:palevioletred;
+    
+    }
+    .container{
+        height: 28%;
+        align-content: center;
+        /* margin-left: 10px; */
+        }
+        .btn{
+            color: black;
+            background-color: #FFC312;
+            width: 100px;
+            margin-left: 700px;
+            float: left;
+    
+            }
+        
